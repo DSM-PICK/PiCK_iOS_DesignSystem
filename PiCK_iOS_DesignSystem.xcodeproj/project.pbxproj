@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -37,7 +37,6 @@
 		827E749D13F4EF3C7B4AB242 /* PiCKAcceptStudentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D501F5088C9FF549C2DD1C /* PiCKAcceptStudentCell.swift */; };
 		9CC41982615A34D2279D19F9 /* PiCKErrorToast+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348FD0EDA18DE92847676F8B /* PiCKErrorToast+Preview.swift */; };
 		9CEEE4B7C57A6B604EE3D2E2 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8CDC4CA69F1C02E7235E821 /* Color.xcassets */; };
-		9FF67F8302CBC29A3CE8BAC6 /* SinglePickerBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F800712A74F421BBA33138 /* SinglePickerBottomSheet.swift */; };
 		A1E743C2F99CC19D97A19ABF /* PiCKMainNavigationBar+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F6741B659A5276D9D07086 /* PiCKMainNavigationBar+Preview.swift */; };
 		A2BDA76D03B8ED93E0F9651D /* DualPickerBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B87171DC2D1E895084524C3 /* DualPickerBottomSheet.swift */; };
 		AB7A88D14E2D3D1C0196D580 /* Pretendard-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24DACE845FA1F776B2244928 /* Pretendard-SemiBold.ttf */; };
@@ -46,10 +45,12 @@
 		C0585190182B702E48966F26 /* PiCKUnderlineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D4DFEF0DD910FF025770D7 /* PiCKUnderlineButton.swift */; };
 		C6BE8B62F57505C36C39EC38 /* PiCKPopUpType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E89E34D12038683DEE6F2C3 /* PiCKPopUpType.swift */; };
 		C7B8B9A7935752CD68E5D36A /* UIColorToColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77556DAFB97006109A5B7C26 /* UIColorToColor.swift */; };
+		D3DBAD66E1BE95E05CAAB72F /* PiCKDisappearToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5901745C5CCA5F44C2B557ED /* PiCKDisappearToast.swift */; };
 		E4FA20A311423305E9610294 /* PiCKClassroomMoveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF198448491F4ACB5FC4A7F9 /* PiCKClassroomMoveCell.swift */; };
 		E9D2DB942793A0A226861A1A /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC6AE0123CB72CDBDC9D2BBD /* Image.xcassets */; };
 		F2E948E45DB898A5BC61FBC0 /* PiCKCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D34F529E801A82F6B0D9A8 /* PiCKCalendarView.swift */; };
 		F772977DB97B4B06692529EC /* Gray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEC9909F6D26CEA5327C361 /* Gray.swift */; };
+		F784CAF4C445A305D0AF3BAD /* SinglePickerBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481DA8931E1BD22B059DCAC /* SinglePickerBottomSheet.swift */; };
 		F79F9AFF4900DCFA03561359 /* Primary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE4FC96965FC627E121355F /* Primary.swift */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0481DA8931E1BD22B059DCAC /* SinglePickerBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePickerBottomSheet.swift; sourceTree = "<group>"; };
 		0CC98A3EDB4DC537684DC45F /* PiCK_iOS_DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiCK_iOS_DesignSystem.swift; sourceTree = "<group>"; };
 		0D2A851258A6AFE596A3DE67 /* PiCKTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiCKTextField.swift; sourceTree = "<group>"; };
 		1751CEC8F8560B3D9DC669A6 /* ColorPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPreview.swift; sourceTree = "<group>"; };
@@ -102,12 +104,12 @@
 		3965469248AAED0FC9297BCC /* BackGround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackGround.swift; sourceTree = "<group>"; };
 		3EEC9909F6D26CEA5327C361 /* Gray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gray.swift; sourceTree = "<group>"; };
 		52BA8B10810A90A7A52E0B01 /* PiCKFontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiCKFontType.swift; sourceTree = "<group>"; };
+		5901745C5CCA5F44C2B557ED /* PiCKDisappearToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiCKDisappearToast.swift; sourceTree = "<group>"; };
 		597D9BAAB6950B7986DB9E3B /* PiCKUnderlineButton+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PiCKUnderlineButton+Preview.swift"; sourceTree = "<group>"; };
 		5B87171DC2D1E895084524C3 /* DualPickerBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualPickerBottomSheet.swift; sourceTree = "<group>"; };
 		5E4D77599BF10E2EE23C8007 /* whiteLottie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = whiteLottie.json; sourceTree = "<group>"; };
 		646B665074856865A3026E0A /* PiCKTextPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiCKTextPreview.swift; sourceTree = "<group>"; };
 		7224757AF16734C973938741 /* Pretendard-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.ttf"; sourceTree = "<group>"; };
-		74F800712A74F421BBA33138 /* SinglePickerBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePickerBottomSheet.swift; sourceTree = "<group>"; };
 		77556DAFB97006109A5B7C26 /* UIColorToColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorToColor.swift; sourceTree = "<group>"; };
 		78C91BFEEE480B525BD396F3 /* PiCKTextField+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PiCKTextField+Preview.swift"; sourceTree = "<group>"; };
 		816E88F5E8BA403D9F18A646 /* PiCKConfirmPopUp+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PiCKConfirmPopUp+Preview.swift"; sourceTree = "<group>"; };
@@ -224,6 +226,14 @@
 				0D2A851258A6AFE596A3DE67 /* PiCKTextField.swift */,
 			);
 			path = TextField;
+			sourceTree = "<group>";
+		};
+		483C4538160D48FF01186063 /* Disappear */ = {
+			isa = PBXGroup;
+			children = (
+				5901745C5CCA5F44C2B557ED /* PiCKDisappearToast.swift */,
+			);
+			path = Disappear;
 			sourceTree = "<group>";
 		};
 		48A967BDAF55663F4FC852A3 /* Underline */ = {
@@ -343,7 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				F5B3D9C28830655F6CA558EA /* Preview */,
-				74F800712A74F421BBA33138 /* SinglePickerBottomSheet.swift */,
+				0481DA8931E1BD22B059DCAC /* SinglePickerBottomSheet.swift */,
 			);
 			path = Apply;
 			sourceTree = "<group>";
@@ -429,6 +439,7 @@
 		B0283F358BD667E3A7DBC2BE /* Toast */ = {
 			isa = PBXGroup;
 			children = (
+				483C4538160D48FF01186063 /* Disappear */,
 				7AF6C226DF02BCBFDE7B5192 /* Error */,
 			);
 			path = Toast;
@@ -595,6 +606,8 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = 0A875DE57D3C1282D99989CE /* Build configuration list for PBXProject "PiCK_iOS_DesignSystem" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -647,8 +660,8 @@
 			files = (
 				1C26A1FE416D2FC1FA2785ED /* TuistBundle+PiCKIOSDesignSystem.swift in Sources */,
 				35F000A03F72D11C40AF3A69 /* PiCK_iOS_DesignSystem.swift in Sources */,
-				9FF67F8302CBC29A3CE8BAC6 /* SinglePickerBottomSheet.swift in Sources */,
 				4F8645107A0CDBB5585B9AD2 /* ApplyBottomSheet+Preview.swift in Sources */,
+				F784CAF4C445A305D0AF3BAD /* SinglePickerBottomSheet.swift in Sources */,
 				A2BDA76D03B8ED93E0F9651D /* DualPickerBottomSheet.swift in Sources */,
 				6CD9D399D42C0C7FBA6806A6 /* DualPickerBottomSheet+Preview.swift in Sources */,
 				2CA9BB2F0B8B5AD5C3027178 /* PiCKButton.swift in Sources */,
@@ -676,6 +689,7 @@
 				0C459461DE9178F0C3FB338E /* PiCKTextField.swift in Sources */,
 				39E0A0FE1A241D6D83AA0147 /* LoginView_Preview.swift in Sources */,
 				4565020158941124CA12390F /* PiCKTextField+Preview.swift in Sources */,
+				D3DBAD66E1BE95E05CAAB72F /* PiCKDisappearToast.swift in Sources */,
 				76C0BEC457591C408334E79B /* PiCKErrorToast.swift in Sources */,
 				9CC41982615A34D2279D19F9 /* PiCKErrorToast+Preview.swift in Sources */,
 				7A4EB7FE1803A1AC9EAAD873 /* PiCKFontType.swift in Sources */,
@@ -797,7 +811,10 @@
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -968,7 +985,10 @@
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited) SWIFT_PACKAGE",
+					DEBUG,
+				);
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SUPPRESS_WARNINGS = YES;
