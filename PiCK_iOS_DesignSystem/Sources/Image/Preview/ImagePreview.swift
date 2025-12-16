@@ -48,7 +48,8 @@ struct ImagePreview: View {
         NamedImage(name: "scheduleIcon", image: PiCKImage.scheduleIcon),
         NamedImage(name: "schoolMealIcon", image: PiCKImage.schoolMealIcon),
         NamedImage(name: "blackLogo", image: PiCKImage.blackLogo),
-        NamedImage(name: "moveClass", image: PiCKImage.moveClass)
+        NamedImage(name: "moveClass", image: PiCKImage.moveClass),
+        NamedImage(name: "withDraw", image: PiCKImage.withDraw)
     ]
 
     var body: some View {
