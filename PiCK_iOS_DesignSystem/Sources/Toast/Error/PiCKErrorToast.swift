@@ -65,7 +65,7 @@ public extension View {
             if isPresented.wrappedValue {
                 VStack {
                     PiCKErrorToast(message: message, isPresented: isPresented)
-                        .padding(.top, 20)
+                        .padding(.top, 8)
                     
                     Spacer()
                 }
