@@ -77,30 +77,3 @@ public struct PiCKClassroomMoveCell: View {
         isSelected ? .Primary.primary500 : .clear
     }
 }
-
-#Preview {
-    VStack(spacing: 16) {
-        PiCKClassroomMoveCell(
-            studentNumber: "2301",
-            studentName: "강해민",
-            startPeriod: 8,
-            endPeriod: 9,
-            currentClassroom: "2학년 3반",
-            moveToClassroom: "세미나실 2-3",
-            isSelected: false,
-            onTap: {}
-        )
-        
-        PiCKClassroomMoveCell(
-            studentNumber: "2301",
-            studentName: "강해민",
-            startPeriod: 8,
-            endPeriod: 9,
-            currentClassroom: "2학년 3반",
-            moveToClassroom: "세미나실 2-3",
-            isSelected: true,
-            onTap: {}
-        )
-    }
-    .padding()
-}

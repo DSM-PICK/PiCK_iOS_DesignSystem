@@ -37,23 +37,20 @@ public struct PiCKAcceptStudentCell: View {
                     Text("\(studentNumber) \(studentName)")
                         .pickText(type: .subTitle3, textColor: .Normal.black)
 
-                    Spacer()
-
                     Text("\(startTime) - \(endTime) (\(activityType))")
-                        .pickText(type: .body2, textColor: .Gray.gray900)
+                        .pickText(type: .label2, textColor: .Gray.gray900)
                 }
                 .padding(.top, 12)
                 .padding(.horizontal, 16)
 
                 Text(reason)
-                    .pickText(type: .body2, textColor: .Gray.gray900)
-                    .padding(.top, 10)
+                    .pickText(type: .body2, textColor: .Normal.black)
+                    .padding(.top, 8)
                     .padding(.horizontal, 16)
-
-                Spacer()
+                    .padding(.bottom, 16)
             }
-            .frame(maxWidth: .infinity)
-            .frame(height: 79)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .frame(minHeight: 79)
             .background(Color.Gray.gray50)
             .cornerRadius(12)
             .overlay(
