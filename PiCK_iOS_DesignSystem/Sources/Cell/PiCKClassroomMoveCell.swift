@@ -37,23 +37,32 @@ public struct PiCKClassroomMoveCell: View {
                     Text("\(studentNumber) \(studentName)")
                         .pickText(type: .subTitle3, textColor: .Normal.black)
 
-                    Spacer()
-
                     Text("\(startPeriod)교시 - \(endPeriod)교시")
                         .pickText(type: .body2, textColor: .Gray.gray900)
                 }
-                .padding(.top, 12)
+                .padding(.top, 16)
                 .padding(.horizontal, 16)
 
-                Text("\(currentClassroom) → \(moveToClassroom)")
-                    .pickText(type: .body2, textColor: .Gray.gray900)
-                    .padding(.top, 10)
-                    .padding(.horizontal, 16)
-
-                Spacer()
+                HStack(spacing: 8) {
+                    Text(currentClassroom)
+                        .pickText(type: .body1, textColor: .Normal.black)
+                    
+                    Image(systemName: "arrow.right")
+                        .font(.system(size: 14))
+                        .foregroundColor(.Normal.black)
+                    
+                    Text(moveToClassroom)
+                        .pickText(type: .body1, textColor: .Normal.white)
+                        .padding(.horizontal, 12)
+                        .padding(.vertical, 6)
+                        .background(Color.Primary.primary300)
+                        .cornerRadius(14)
+                }
+                .padding(.top, 8)
+                .padding(.horizontal, 16)
+                .padding(.bottom, 16)
             }
-            .frame(maxWidth: .infinity)
-            .frame(height: 79)
+            .frame(maxWidth: .infinity, alignment: .leading)
             .background(Color.Gray.gray50)
             .cornerRadius(12)
             .overlay(

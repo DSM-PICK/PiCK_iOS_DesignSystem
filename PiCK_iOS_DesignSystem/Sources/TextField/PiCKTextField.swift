@@ -14,6 +14,8 @@ public struct PiCKTextField: View {
     @State private var isEditing: Bool = false
     @State private var isSecure: Bool = false
     @State private var isVerificationSent: Bool = false
+    @State private var remainingSeconds = 0
+    @State private var timerCancellable: AnyCancellable?
 
     public init(
         text: Binding<String>,
@@ -69,15 +71,16 @@ public struct PiCKTextField: View {
                         .pickText(type: .caption2, textColor: .Gray.gray500)
                     Button(action: {
                         verificationButtonTapped?()
-                        isVerificationSent = true
+                        startTimer()
                     }) {
-                        Text(isVerificationSent ? "재발송" : "인증 코드")
+                        Text(buttonText)
                             .pickText(type: .button2, textColor: .Primary.primary900)
                             .padding(.horizontal, 12)
                             .padding(.vertical, 4)
                             .background(Color.Primary.primary50)
                             .cornerRadius(5)
                     }
+                    .disabled(text.isEmpty || remainingSeconds > 0)
                 } else if showEmail {
                     Text("@dsm.hs.kr")
                         .pickText(type: .caption2, textColor: .Gray.gray500)
@@ -98,6 +101,9 @@ public struct PiCKTextField: View {
                     .frame(maxWidth: .infinity, alignment: .trailing)
             }
         }
+        .onDisappear {
+            stopTimer()
+        }
     }
 
     private var borderColor: Color {
@@ -108,5 +114,37 @@ public struct PiCKTextField: View {
         } else {
             return .clear
         }
+    }
+
+    private var buttonText: String {
+        if remainingSeconds > 0 {
+            let minutes = remainingSeconds / 60
+            let seconds = remainingSeconds % 60
+            return String(format: "%02d:%02d", minutes, seconds)
+        } else if isVerificationSent {
+            return "재발송"
+        } else {
+            return "인증 코드"
+        }
+    }
+
+    private func startTimer() {
+        isVerificationSent = true
+        remainingSeconds = 60
+
+        timerCancellable = Timer.publish(every: 1.0, on: .main, in: .common)
+            .autoconnect()
+            .sink { _ in
+                if remainingSeconds > 0 {
+                    remainingSeconds -= 1
+                } else {
+                    stopTimer()
+                }
+            }
+    }
+
+    private func stopTimer() {
+        timerCancellable?.cancel()
+        timerCancellable = nil
     }
 }
